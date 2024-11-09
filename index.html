@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/notes_icon.png" type="image/x-icon">
+    <title>Dev Notes</title>
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>DevNotes</h1>
+        <div id="search-form">
+            <i class="bi bi-search"></i>
+            <input type="text" id="search-input" placeholder="Busque por uma nota">
+        </div>
+        <button id="export-notes">Exportar CSV <i class="bi bi-download"></i></button>
+    </header>
+    <div id="main-container">
+        <div id="add-note-container">
+            <input type="text" placeholder="O que você deseja anotar?" id="note-content">
+            <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+        </div>
+        <div id="notes-container">
+            <div class="note fixed">
+                <textarea placeholder="Adicione algum texto"></textarea>
+                <i class="bi bi-pin"></i>
+                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-file-earmark-plus"></i>
+            </div>
+            <div class="note">
+                <textarea placeholder="Adicione algum texto"></textarea>
+                <i class="bi bi-pin"></i>
+                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-file-earmark-plus"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
